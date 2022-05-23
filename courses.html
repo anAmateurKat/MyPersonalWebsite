@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Courses</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="js/script.js" defer></script>
+
+    </head>
+    
+    <body>
+        <!--The entire webpage will be contained in class 'container'-->
+        <div class="container">
+
+            <!--Nav Bar wrapper-->
+            <div class="navBar-wrapper">
+                <div class="leftNavSec">
+                    <div class="nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    
+                    <div class="nav-link">
+                        <a href="resume.html">Résumé</a>
+                    </div>
+
+                    <div class="nav-link">
+                        <a href="courses.html">Courses</a>
+                    </div>
+                </div>
+
+                <div class="rightNavSec">
+                    <div class="brand">
+                        <div>Akat</div>
+                    </div>
+                </div>
+            </div>
+            <!--end Nav Bar wrapper-->
+            
+            <!--Page content wrapper-->
+            <div class="pageContent-wrapper">
+                <div class="courses">
+                    <h1>Course History</h1>
+                    
+                    <div class="actions">
+                        <input type="text" id="search" placeholder="Search">
+                        <select name="filter" id="filter">
+                            <option value="filter by level" selected>Filter Courses by...</option>
+                            <option value="1">Level 1</option>
+                            <option value="2">Level 2</option>
+                            <option value="4">Level 4</option>
+                        </select>
+                        
+                        <select name="sort" id="sort">
+                            <option style="display: none;" value="sort by" selected>Sort by...</option>
+                            <option value="l-to-h">Level: Low to High</option>
+                            <option value="h-to-l">Level: High to Low</option>
+                        </select>
+                    
+                    </div>
+
+                    <div id="results">
+                         <!--Course info for all levels will be loaded here dynamically with JavaScript-->
+                    </div>
+
+                </div>
+            </div>
+            <!--end Page content wrapper-->
+
+            <!--Page footer wrapper-->
+            <footer class="footer">
+                <div class="footer-social-wrapper">
+                    <a href="https://www.linkedin.com/in/placidakat">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/anAmateurKat">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:cidakat@outlook.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </div>
+
+                <div class="footer-designer-wrapper">
+                    <p class="designer-year">
+                        Designed by Placid Akat 2021
+                    </p>
+                </div>
+                
+            </footer>
+            <!--end Page footer wrapper-->
+
+        </div>
+        <!--end class "container"-->
+        
+    </body>
+</html>

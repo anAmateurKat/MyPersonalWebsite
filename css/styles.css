@@ -1,0 +1,172 @@
+/*MASTER STYLES*/
+body{
+    background-color: #edc9af;
+    
+    /*This ensures that the footer sticks to the bottom of the page*/
+    position: relative;
+    margin: 0px;
+
+}
+
+.pageContent-wrapper{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*This ensures that the footer sticks to the bottom of the page*/
+    min-height: 100vh;
+    padding: 30px 30px 220px;
+    
+}
+
+
+/*NAV BAR STYLES*/
+.navBar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.leftNavSec{
+    display: flex;
+}
+
+.navBar-wrapper > .leftNavSec > div{
+    margin-right: 10px;
+    text-transform: uppercase;
+    /*font-size: 0.8em;*/
+}
+
+.nav-link{
+    height: 22px;
+    border-bottom: 1px solid transparent; /**/
+    transition: border-bottom 0.5s; /*animating the bottom border*/
+}
+
+.nav-link > a{
+    text-decoration: none;
+    color: gray;
+    transition: color 0.5s;
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-link > a:hover{
+    color: black;
+}
+
+.navBar-wrapper > .rightNavSec > div{
+    text-transform: uppercase;
+}
+
+
+/*INDEX ~ PAGE BODY STYLES*/
+.name-pic, .aboutMe, .aboutMyCollege{
+    margin-bottom: 30px;
+    
+}
+
+.name-pic{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.name-pic > h1{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 90px;
+
+}
+.name-pic > img{
+    
+    border-radius: 20px;
+}
+
+/*RESUME ~ PAGE BODY STYLES*/
+
+/*COURSES ~ PAGE BODY STYLES*/
+.actions{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#search{
+    border-style: none;
+    border-radius: 7px;
+    width: 500px;
+    height: 30px;
+}
+
+#filter, #sort{
+    border-style: none;
+    border-radius: 7px;
+    width: 190px;
+    height: 34px;
+    
+}
+
+.level1, .level2, .level4{
+    margin-bottom: 25px;
+}
+
+.course-container{
+    display: flex;
+    border: 2px solid;
+    border-style: outset;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    /*background-color: #c09999;*/
+}
+
+.course-details{
+    margin-right: 20px;
+}
+
+/*FOOTER STYLES*/
+.footer{
+    padding: 30px 0;
+    background-color: #202020;
+    text-align: center;
+    width: 100%;
+    height: 130px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /*This ensures that the footer sticks to the bottom of the page*/
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+.footer-social-wrapper{
+    padding-bottom: 30px;
+    color: lightgray;
+}
+
+.footer-social-wrapper > a{
+    color: inherit;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid;
+    width: 35px;
+    height: 35px;
+    line-height: 34px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer-social-wrapper > a:hover{
+    opacity: 1;
+}
+
+.footer-designer-wrapper{
+    font-size: 15px;
+    color: #707070;
+}
